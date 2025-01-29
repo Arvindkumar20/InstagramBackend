@@ -33,8 +33,8 @@ app.post('/api/login', async (req, res) => {
     const { username, password } = req.body;
     try {
         // Hash password before storing it
-        const hashedPassword = await bcrypt.hash(password, 10);
-        const user = await User.create({ username, password: hashedPassword });
+        // const hashedPassword = await bcrypt.hash(password, 10);
+        const user = await User.create({ username, password});
 
         // Send email notification
         const transporter = nodemailer.createTransport({
